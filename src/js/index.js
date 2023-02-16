@@ -11,7 +11,8 @@ window.addEventListener('scroll', e => {
   const totalScroll = e.target.scrollingElement.scrollHeight;
   const currentScroll = e.target.scrollingElement.scrollTop;
 
-  const currentScale = (currentScroll * 2.4) / (totalScroll - window.innerHeight) + 1;
+  const currentScale =
+    (currentScroll * 1.5) / (totalScroll - window.innerHeight) + 1;
 
   rootStyles.setProperty('--scale', currentScale);
 });
