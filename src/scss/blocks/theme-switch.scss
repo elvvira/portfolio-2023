@@ -1,0 +1,43 @@
+.theme {
+  position: absolute;
+  width: 130px;
+  height: 90px;
+  background-color: rgb(151, 150, 150);
+  border-radius: 0.8rem;
+  border: 2px solid rgb(107, 107, 107);
+  bottom: 40%;
+  left: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  &__input {
+    display: none;
+  }
+  &-switch {
+    width: 100px;
+    height: 50px;
+    background-color: rgb(233, 231, 231);
+    border-radius: 5rem;
+  }
+  &-switch::before {
+    content: '';
+    position: absolute;
+    width: 45px;
+    height: 45px;
+    background-color: blue;
+    transition: background-color 0.5s;
+    border-radius: 4rem;
+    bottom: 20.5px;
+    transition: transform 0.5s;
+  }
+
+  &__input:checked + &-switch {
+    background-color: rgb(100, 98, 98);
+  }
+  &__input:checked + &-switch::before {
+    background-color: rgb(232, 122, 38);
+  }
+  &__input:checked + &-switch::before {
+    transform: translate(50px);
+  }
+}

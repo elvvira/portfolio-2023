@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .background {
   position: fixed;
   top: 0;
@@ -7,16 +9,19 @@
   display: grid;
   grid-template-columns: 55% 45%;
   transform: scale(var(--scale));
-  transform-origin: 33% 63%;
+
+  @include responsive(desktop) {
+    transform-origin: 33% 63%;
+  }
 
   &__first {
     background-image: url('assets/images/bedge-grunge.png');
 
-    background-color: rgb(241, 237, 216);
+    background-color: var(--wall1);
   }
   &__second {
     background-image: url('assets/images/bedge-grunge.png');
-    background-color: rgb(227, 208, 226);
+    background-color: var(--wall2);
   }
 }
 .tiles {
@@ -31,18 +36,28 @@
   &__tile {
     width: 100%;
     height: 150px;
-    background-color: gray;
+    background-color: var(--tiles1);
     border: 1px solid rgb(49, 49, 49);
     border-radius: 0.5rem;
     background-image: url('assets/images/buried.png');
 
     &--second {
       height: 180px;
-      background-color: rgb(160, 159, 159);
+      background-color: var(--tiles2);
     }
   }
   &--second {
     background-color: rgb(4, 4, 4);
     width: 45%;
   }
+}
+.background--night::after {
+  content: '';
+  position: absolute;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.209);
 }
