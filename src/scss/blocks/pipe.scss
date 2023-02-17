@@ -2,7 +2,6 @@
   position: fixed;
   bottom: 0;
   left: 35%;
-  // overflow: hidden;
   width: 5rem;
   height: 80%;
   background-color: var(--pipe);
@@ -46,10 +45,13 @@
   top: -8rem;
 }
 .pipe--on::before {
-  background-color: rgb(246, 246, 219);
-  box-shadow: 0 0 70px 70px rgb(246, 246, 219);
+  background-color: rgb(245, 245, 226);
+  box-shadow: 0 0 50px 60px rgb(246, 246, 219);
   z-index: 100;
+  animation: blink 3s steps(1);
+  animation-duration: 2s;
 }
+
 .pipe::after {
   content: '';
   position: absolute;
@@ -59,4 +61,26 @@
   background-color: var(--pipe-before);
   left: -0.5rem;
   border-radius: 0.4rem;
+}
+
+@keyframes blink {
+  10%,
+  70%,
+  80%,
+  90%,
+  100% {
+    box-shadow: 0 0 50px 70px rgb(246, 246, 219);
+    border-color: rgb(245, 245, 226);
+  }
+  0%,
+  50%,
+  55%,
+  60%,
+  65%,
+  75%,
+  85%,
+  95% {
+    box-shadow: 0 0 50px 80px rgb(246, 246, 219);
+    background-color: rgb(245, 245, 226);
+  }
 }

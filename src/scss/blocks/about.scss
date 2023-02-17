@@ -1,0 +1,33 @@
+.about--show {
+  position: fixed;
+  background-color: rgba(69, 69, 69, 0.655);
+  background-image: url('assets/images/bedge-grunge.png');
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about {
+  display: none;
+  &__container {
+    overflow: hidden;
+    background-color: yellow;
+    border: 5px solid black;
+    border-radius: 800px;
+    width: 90%;
+    height: 60%;
+    display: flex;
+    justify-content: center;
+    padding-top: 4rem;
+  }
+  &__title {
+    width: 70%;
+    height: 230px;
+
+    &--image {
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}

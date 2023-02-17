@@ -1,0 +1,10 @@
+.exit {
+  display: none;
+}
+.exit--show {
+  display: block;
+  position: absolute;
+  padding-top: 2rem;
+  left: 2rem;
+  z-index: 10;
+}
