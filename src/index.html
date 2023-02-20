@@ -12,6 +12,7 @@
     <main class="main">
       <div id="screen" class="background">
         <div class="background__first">
+          <canvas id="canvas-left"></canvas>
           <div class="tiles">
             <div class="tiles__tile"></div>
             <div class="tiles__tile"></div>
@@ -26,6 +27,7 @@
         </div>
 
         <div class="background__second">
+          <canvas id="pizarra" class="canvas"></canvas>
           <div class="tiles tiles--second">
             <div class="tiles__tile tiles__tile--second"></div>
             <div class="tiles__tile tiles__tile--second"></div>
@@ -60,13 +62,45 @@
           <div class="about__title">
             <img class="about__title--image" src="assets/images/about-title.svg" alt="" />
           </div>
+          <div class="about__info">
+            <div class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at
+              odio voluptatem vel repellendus. Hic, minus id.
+            </div>
+            <div class="about__image"></div>
+            <div class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at
+              odio voluptatem vel repellendus. Hic, minus id.
+            </div>
+          </div>
         </div>
       </div>
 
       <div id="contact" class="contact">
         <div class="contact__container">
-          <div class="contact__title">
-            <img class="contact__title--image" src="assets/images/contac-title.svg" alt="" />
+          <img class="contact__title" src="assets/images/contact-title.svg" alt="" />
+          <div class="contact__tickets">
+            <!-- <img src="assets/images/contact-github.svg" alt="" />
+            <img src="assets/images/contact-mail.svg" alt="" />
+            <img src="assets/images/contact-behance.svg" alt="" />
+            <img src="assets/images/contact-linkedin.svg" alt="" /> -->
+
+            <a class="icon__container" href="https://github.com/elvvira">
+              <img class="sticker" src="assets/images/contact-github.svg" alt="icono github" />
+            </a>
+            <a class="icon__container" href="mailto:elvvira.castellanos@gmail.com">
+              <img class="sticker" src="assets/images/contact-mail.svg" alt="icono mail" />
+            </a>
+            <!-- <a class="icon__container" href="https://www.instagram.com/elviwer/">
+                <img class="sticker" src="assets/images/icon-instagram.svg" alt="icono instagram" />
+              </a> -->
+            <a class="icon__container" href="https://www.behance.net/elviracastell1">
+              <img class="sticker" src="assets/images/contact-behance.svg" alt="icono behance" />
+            </a>
+            <a class="icon__container" href="https://www.linkedin.com/in/elvvira-castellanos-39293b208/">
+              <img class="sticker" src="assets/images/contact-linkedin.svg" alt="icono linkedin" />
+            </a>
+            <img id="sticker-info" class="contact__tickets--phone" src="assets/images/contact-phone.svg" alt="" />
           </div>
         </div>
       </div>
@@ -78,15 +112,11 @@
           </div>
         </div>
       </div>
+
       <div id="works" class="works">
-        <div class="works__corner works__corner--left"></div>
         <div class="works__container">
-          <div class="works__title">
-            <img class="works__title--image" src="assets/images/works-title.svg" alt="" />
-          </div>
-          <div></div>
+          <img src="assets/images/works-figure.svg" alt="" />
         </div>
-        <div class="works__corner works__corner--right"></div>
       </div>
     </main>
 

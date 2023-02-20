@@ -11,35 +11,69 @@
 .contact {
   display: none;
   &__container {
-    overflow: hidden;
-    background-color: red;
-    border: 5px solid black;
-    width: 90%;
-    max-width: 900px;
-    height: 60%;
     display: flex;
-    justify-content: center;
-    padding-top: 4rem;
+    flex-direction: column;
   }
 
   &__title {
     width: 100%;
-    height: 230px;
+    height: 100%;
+    z-index: 100;
+  }
+  &__tickets {
     position: relative;
-
-    &--image {
-      width: 80%;
-      max-width: 675px;
-      margin-right: auto;
-      margin-left: auto;
+    top: -10px;
+    width: 484px;
+    height: 377px;
+    // border: 1px solid black;
+    // background-color: red;
+    display: flex;
+    // padding-top: 1rem;
+    &--phone {
+      position: absolute;
+      top: 30px;
+      left: 700px;
+      transform: rotate(-10deg);
     }
   }
-  &__title::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 4px;
-    background-color: black;
-    top: 100%;
+}
+.sticker--animate {
+  animation: shake infinite 0.4s;
+  @keyframes shake {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(5px, 5px) rotate(5deg);
+    }
+    50% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    75% {
+      transform: translate(-5px, 5px) rotate(-5deg);
+    }
+    100% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+  }
+}
+.sticker--tear {
+  animation: tear forwards 0.3s;
+  @keyframes tear {
+    0% {
+      transform: translate(0, 0) rotate(0deg);
+    }
+    25% {
+      transform: translate(0px, 0px) rotate(0deg);
+    }
+    50% {
+      transform: translate(0, 50px) rotate(-1deg);
+    }
+    75% {
+      transform: translate(0px, 60px) rotate(-2deg);
+    }
+    100% {
+      transform: translate(0, 70px) rotate(-3deg);
+    }
   }
 }

@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .works--show {
   position: fixed;
   background-color: rgba(69, 69, 69, 0.655);
@@ -11,29 +13,13 @@
 .works {
   display: none;
   &__container {
-    background-color: rgb(63, 207, 1);
-    border: 5px solid black;
-    border-radius: 10px;
-    width: 50%;
-    height: 70%;
+    width: 90%;
+    height: 300px;
     display: flex;
     justify-content: center;
-    padding-top: 4rem;
-  }
-  &__title {
-    width: 70%;
-    height: 230px;
-
-    &--image {
-      margin-right: auto;
-      margin-left: auto;
+    position: relative;
+    @include responsive(laptop) {
+      height: 600px;
     }
   }
-}
-
-.works__corner {
-  background-color: rgb(63, 207, 1);
-  width: 70%;
-  height: 50%;
-  transform: rotate(45deg);
 }
