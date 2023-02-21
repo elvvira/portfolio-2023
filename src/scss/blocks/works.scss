@@ -13,13 +13,34 @@
 .works {
   display: none;
   &__container {
-    width: 90%;
-    height: 300px;
+    width: 100%;
+    height: 1000px;
     display: flex;
     justify-content: center;
     position: relative;
+    transform: rotate(-90deg);
+
+    @include responsive(tablet) {
+      transform: rotate(0deg);
+      height: 500px;
+    }
     @include responsive(laptop) {
       height: 600px;
+    }
+  }
+  &__gallery {
+    position: absolute;
+    top: 160px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 70%;
+    gap: 1rem;
+    justify-content: center;
+
+    &--item {
+      width: 180px;
+      height: 180px;
+      background-color: black;
     }
   }
 }

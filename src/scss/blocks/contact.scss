@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .contact--show {
   position: fixed;
   background-color: rgba(69, 69, 69, 0.655);
@@ -13,6 +15,14 @@
   &__container {
     display: flex;
     flex-direction: column;
+    width: 80%;
+    transform: rotate(-90deg);
+    @include responsive(tablet) {
+      transform: rotate(0deg);
+
+      display: flex;
+      flex-direction: column;
+    }
   }
 
   &__title {
@@ -22,18 +32,24 @@
   }
   &__tickets {
     position: relative;
-    top: -10px;
-    width: 484px;
-    height: 377px;
-    // border: 1px solid black;
-    // background-color: red;
     display: flex;
-    // padding-top: 1rem;
+    width: 240px;
+    height: 160px;
+    @include responsive(tablet) {
+      top: -10px;
+      width: 484px;
+      height: 377px;
+    }
     &--phone {
-      position: absolute;
-      top: 30px;
-      left: 700px;
+      position: relative;
+      top: 10px;
+      left: 30px;
       transform: rotate(-10deg);
+      @include responsive(tablet) {
+        position: relative;
+        top: 30px;
+        left: 70px;
+      }
     }
   }
 }

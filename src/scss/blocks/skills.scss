@@ -14,7 +14,7 @@
   &__container {
     overflow: hidden;
     background-color: pink;
-    border: 5px solid black;
+    border: 2px solid black;
     border-radius: 100px;
     width: 90%;
     height: 60%;
@@ -23,12 +23,32 @@
     padding-top: 4rem;
   }
   &__title {
-    width: 70%;
-    height: 230px;
-
     &--image {
       margin-right: auto;
       margin-left: auto;
     }
+  }
+  &__info {
+    line-height: 5rem;
+    &--container {
+      display: flex;
+      width: 50%;
+      justify-content: space-around;
+      gap: 6rem;
+    }
+  }
+  &__icons {
+    display: flex;
+    gap: 2rem;
+  }
+  &__icon {
+    width: 100px;
+  }
+  &__title {
+    font-size: 3rem;
+    font-family: 'Arial Rounded MT Bold', 'Helvetica Rounded', Arial, sans-serif;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
   }
 }

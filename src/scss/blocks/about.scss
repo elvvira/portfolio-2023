@@ -1,3 +1,5 @@
+@use '../mixins/responsive.scss' as *;
+
 .about--show {
   position: fixed;
   background-color: rgba(69, 69, 69, 0.655);
@@ -11,23 +13,50 @@
 .about {
   display: none;
   &__container {
+    position: relative;
     overflow: hidden;
     background-color: yellow;
     border: 2px solid black;
-    border-radius: 800px;
+    border-radius: 140px;
     width: 90%;
-    height: 60%;
+    height: 500px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
-    gap: 2rem;
+    @include responsive(tablet) {
+      gap: 0rem;
+      border-radius: 800px;
+      height: 600px;
+    }
+    @include responsive(laptop) {
+      border-radius: 900px;
+      height: 700px;
+    }
+    @include responsive(desktop) {
+      border-radius: 1000px;
+      height: 1100px;
+    }
   }
   &__title {
-    position: relative;
-    top: 0;
-    width: 70%;
-    height: 230px;
+    // position: absolute;
+    // top: 30px;
+    width: 40%;
+    height: 50px;
+
+    @include responsive(tablet) {
+      width: 40%;
+      height: 100px;
+    }
+    @include responsive(laptop) {
+      width: 50%;
+      // top: 30px;
+      height: 200px;
+    }
+    @include responsive(desktop) {
+      width: 50%;
+      // top: 100px;
+    }
 
     &--image {
       margin-right: auto;
@@ -35,19 +64,50 @@
     }
   }
   &__info {
+    height: 400px;
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: flex-end;
-    padding: 5rem;
-    gap: 3rem;
+    padding: 2rem;
+
+    @include responsive(tablet) {
+      height: 320px;
+      width: 80%;
+      gap: 1rem;
+      flex-direction: row;
+    }
+    @include responsive(laptop) {
+      height: 400px;
+    }
+    @include responsive(desktop) {
+    }
   }
   &__image {
-    width: 30%;
-    height: 30%;
-    background-color: black;
+    width: 40%;
+    padding: 0.5rem;
+    @include responsive(tablet) {
+      width: 60%;
+    }
+    @include responsive(laptop) {
+      width: 70%;
+    }
+    @include responsive(desktop) {
+      width: 80%;
+    }
   }
   &__text {
-    width: 40%;
-    font-size: 1.5rem;
+    font-size: 0.7rem;
+    width: 50%;
+
+    @include responsive(tablet) {
+      width: 60%;
+      font-size: 1rem;
+    }
+    @include responsive(laptop) {
+      font-size: 1.5rem;
+    }
+    @include responsive(desktop) {
+      font-size: 2rem;
+    }
   }
 }
