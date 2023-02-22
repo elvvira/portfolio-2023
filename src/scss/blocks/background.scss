@@ -15,12 +15,12 @@
   // }
 
   &__first {
-    background-image: url('assets/images/bedge-grunge.png');
+    background-image: url('/assets/images/bedge-grunge.png');
 
     background-color: var(--wall1);
   }
   &__second {
-    background-image: url('assets/images/bedge-grunge.png');
+    background-image: url('/assets/images/bedge-grunge.png');
     background-color: var(--wall2);
   }
 }
@@ -39,7 +39,7 @@
     background-color: var(--tiles1);
     border: 1px solid rgb(49, 49, 49);
     border-radius: 0.5rem;
-    background-image: url('assets/images/buried.png');
+    background-image: url('/assets/images/buried.png');
 
     &--second {
       height: 180px;
