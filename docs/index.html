@@ -1,1 +1,163 @@
-<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><link rel="icon" type="image/svg+xml" href=""><meta name="viewport" content="width=device-width,initial-scale=1"><title>Vite Template</title><script type="module" crossorigin src="./assets/index-73ce273d.js"></script><link rel="stylesheet" href="./assets/index-a4a140b8.css"></head><body><main class="main"><div id="screen" class="background"><div class="background__first"><canvas id="canvas-left"></canvas><div class="tiles"><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div><div class="tiles__tile"></div></div></div><div class="background__second"><canvas id="pizarra" class="canvas"></canvas><div class="tiles tiles--second"><div class="tiles__tile tiles__tile--second"></div><div class="tiles__tile tiles__tile--second"></div><div class="tiles__tile tiles__tile--second"></div><div class="tiles__tile tiles__tile--second"></div><div class="tiles__tile tiles__tile--second"></div><div class="tiles__tile tiles__tile--second"></div></div></div><div class="pipe" id="pipe-light"><div class="pipe__stickers"><img id="about-sticker" class="pipe__sticker pipe__sticker--about" src="./assets/about-20de5e67.svg" alt=""> <img id="contact-sticker" class="pipe__sticker pipe__sticker--contact" src="./assets/contact-a5bf7742.svg" alt=""> <img id="skills-sticker" class="pipe__sticker pipe__sticker--skills" src="./assets/skill-c8c4aee7.svg" alt=""> <img id="works-sticker" class="pipe__sticker pipe__sticker--works" src="./assets/works-8351d8e2.svg" alt=""></div></div><div class="theme"><input class="theme__input" type="checkbox" id="input"> <label class="theme-switch" for="input" id="label"></label></div></div><div><img id="exit" class="exit" src="./assets/exit-38091e69.svg" alt=""></div><div id="about" class="about"><div class="about__container"><div class="about__title"><img class="about__title--image" src="./assets/about-title-162d9e19.svg" alt=""></div><div class="about__info"><div class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at odio voluptatem vel repellendus. Hic, minus id.</div><img class="about__image" src="./assets/photo-me-87cb2eed.svg" alt=""><div class="about__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at odio voluptatem vel repellendus. Hic, minus id.</div></div></div></div><div id="contact" class="contact"><div class="contact__container"><img class="contact__title" src="./assets/contact-title-6579a295.svg" alt=""><div class="contact__tickets"><a class="icon__container" href="https://github.com/elvvira"><img class="sticker" src="./assets/contact-github-3a8cc6e6.svg" alt="icono github"> </a><a class="icon__container" href="mailto:elvvira.castellanos@gmail.com"><img class="sticker" src="./assets/contact-mail-e11df584.svg" alt="icono mail"> </a><a class="icon__container" href="https://www.behance.net/elviracastell1"><img class="sticker" src="./assets/contact-behance-aaa78e78.svg" alt="icono behance"> </a><a class="icon__container" href="https://www.linkedin.com/in/elvvira-castellanos-39293b208/"><img class="sticker" src="./assets/contact-linkedin-2f81d526.svg" alt="icono linkedin"> </a><a class="icon__container"><img id="sticker-info" class="contact__tickets--phone" src="./assets/contact-phone-305db519.svg" alt=""></a></div></div></div><div id="skills" class="skills"><div class="skills__container"><div class="skills__title"><img class="skills__title--image" src="./assets/skills-title-67965ac9.svg" alt=""><div class="skills__info"><div class="skills__info--container"><p class="skills__title">design</p><div class="skills__icons"><img class="skills__icon" class="skills__icon" src="./assets/icon-ai-d88584a2.svg" alt=""> <img class="skills__icon" src="./assets/icon-id-b9716f85.svg" alt=""> <img class="skills__icon" src="./assets/icon-psd-a44058b6.svg" alt=""></div></div><div class="skills__info--container"><p class="skills__title">web</p><div class="skills__icons"><img class="skills__icon" src="./assets/icon-html-e521dac1.svg" alt=""> <img class="skills__icon" src="./assets/icon-css-bb10076b.svg" alt=""> <img class="skills__icon" src="./assets/icon-sass-d63298ea.svg" alt=""></div></div></div></div></div></div><div id="works" class="works"><div class="works__container"><img src="./assets/works-figure-39fef52e.svg" alt=""><div class="works__gallery"><div class="works__gallery--item"></div><div class="works__gallery--item"></div><div class="works__gallery--item"></div><div class="works__gallery--item"></div><div class="works__gallery--item"></div><div class="works__gallery--item"></div></div></div></div></main></body></html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Vite Template</title>
+    <script type="module" crossorigin src="./assets/index-bd6a9426.js"></script>
+    <link rel="stylesheet" href="./assets/index-6e076c05.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div id="screen" class="background">
+        <div class="background__first">
+          <canvas id="canvas-left"></canvas>
+          <div class="tiles">
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+            <div class="tiles__tile"></div>
+          </div>
+        </div>
+        <div class="background__second">
+          <canvas id="pizarra" class="canvas"></canvas>
+          <div class="tiles tiles--second">
+            <div class="tiles__tile tiles__tile--second"></div>
+            <div class="tiles__tile tiles__tile--second"></div>
+            <div class="tiles__tile tiles__tile--second"></div>
+            <div class="tiles__tile tiles__tile--second"></div>
+            <div class="tiles__tile tiles__tile--second"></div>
+            <div class="tiles__tile tiles__tile--second"></div>
+          </div>
+        </div>
+        <div class="pipe" id="pipe-light">
+          <div class="pipe__stickers">
+            <img id="about-sticker" class="pipe__sticker pipe__sticker--about" src="./assets/about-20de5e67.svg" alt="" />
+            <img id="contact-sticker" class="pipe__sticker pipe__sticker--contact" src="./assets/contact-a5bf7742.svg" alt="" />
+            <img id="skills-sticker" class="pipe__sticker pipe__sticker--skills" src="./assets/skill-c8c4aee7.svg" alt="" />
+            <img id="works-sticker" class="pipe__sticker pipe__sticker--works" src="./assets/works-8351d8e2.svg" alt="" />
+          </div>
+        </div>
+        <div class="theme"><input class="theme__input" type="checkbox" id="input" /> <label class="theme-switch" for="input" id="label"></label></div>
+      </div>
+      <div><img id="exit" class="exit" src="./assets/exit-38091e69.svg" alt="" /></div>
+      <div id="about" class="about">
+        <div class="about__container">
+          <div class="about__title"><img class="about__title--image" src="./assets/about-title-162d9e19.svg" alt="" /></div>
+          <div class="about__info">
+            <div class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at
+              odio voluptatem vel repellendus. Hic, minus id.
+            </div>
+            <img class="about__image" src="./assets/photo-me-87cb2eed.svg" alt="" />
+            <div class="about__text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum nam quos esse odit? Porro iusto hic, alias, laboriosam magni modi explicabo eum at
+              odio voluptatem vel repellendus. Hic, minus id.
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="contact" class="contact">
+        <div class="contact__container">
+          <img class="contact__title" src="./assets/contact-title-6579a295.svg" alt="" />
+          <div class="contact__tickets">
+            <a class="icon__container" href="https://github.com/elvvira"
+              ><img class="sticker" src="./assets/contact-github-3a8cc6e6.svg" alt="icono github" /> </a
+            ><a class="icon__container" href="mailto:elvvira.castellanos@gmail.com"
+              ><img class="sticker" src="./assets/contact-mail-e11df584.svg" alt="icono mail" /> </a
+            ><a class="icon__container" href="https://www.behance.net/elviracastell1"
+              ><img class="sticker" src="./assets/contact-behance-aaa78e78.svg" alt="icono behance" /> </a
+            ><a class="icon__container" href="https://www.linkedin.com/in/elvvira-castellanos-39293b208/"
+              ><img class="sticker" src="./assets/contact-linkedin-2f81d526.svg" alt="icono linkedin" /> </a
+            ><a class="icon__container"><img id="sticker-info" class="contact__tickets--phone" src="./assets/contact-phone-305db519.svg" alt="" /></a>
+          </div>
+        </div>
+      </div>
+      <div id="skills" class="skills">
+        <div class="skills__container">
+          <div class="skills__titles">
+            <img class="skills__title" src="./assets/skills-title-67965ac9.svg" alt="" />
+            <p class="skills__tools">web & design</p>
+          </div>
+          <div class="tools">
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-ai-ea0d3b54.svg" alt="" />
+              <p class="tools__icon__text">illustrator</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-id-84c40604.svg" alt="" />
+              <p class="tools__icon__text">inDesign</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-psd-63cf0c8d.svg" alt="" />
+              <p class="tools__icon__text">photoshop</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-procreate-67390ec6.svg" alt="" />
+              <p class="tools__icon__text">procreate</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-html-a84eaef2.svg" alt="" />
+              <p class="tools__icon__text">html</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-css-eae6072c.svg" alt="" />
+              <p class="tools__icon__text">css</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-js-45a8a9f3.svg" alt="" />
+              <p class="tools__icon__text">js</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-vite-fb45eb67.svg" alt="" />
+              <p class="tools__icon__text">vite</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-react-e3b55d91.svg" alt="" />
+              <p class="tools__icon__text">react</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-sass-754659f3.svg" alt="" />
+              <p class="tools__icon__text">sass</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-styled-4b179903.svg" alt="" />
+              <p class="tools__icon__text">styled</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-postcss-589bc494.svg" alt="" />
+              <p class="tools__icon__text">postcss</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-visual-25cf23ea.svg" alt="" />
+              <p class="tools__icon__text">visual</p>
+            </div>
+            <div class="tools__icon">
+              <img class="tools__icon__image" src="./assets/icon-git-7aa90813.svg" alt="" />
+              <p class="tools__icon__text">git</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="works" class="works">
+        <div class="works__container">
+          <img src="./assets/works-figure-39fef52e.svg" alt="" />
+          <div class="works__gallery">
+            <div><img class="works__gallery--item" src="./assets/work-password-f36657a3.png" alt="" /></div>
+            <div class="works__gallery--item"></div>
+            <div class="works__gallery--item"></div>
+            <div class="works__gallery--item"></div>
+            <div class="works__gallery--item"></div>
+            <div class="works__gallery--item"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

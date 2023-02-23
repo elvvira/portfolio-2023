@@ -61,7 +61,6 @@
   justify-content: center;
   @include responsive(tablet) {
     height: 90%;
-
     justify-content: left;
     padding: 1rem;
   }

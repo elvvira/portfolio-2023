@@ -172,16 +172,35 @@
 
       <div id="works" class="works">
         <div class="works__container">
-          <img src="./assets/images/works-figure.svg" alt="" />
+          <picture>
+            <source media="(min-width: 1200px)" srcset="./assets/images/works-figure.svg" />
+            <source media="(min-width: 768px)" srcset="./assets/images/works-figure.svg" />
+            <source media="(min-width: 360px)" srcset="./assets/images/works-figure-mobile.svg" />
+            <img class="works__figure" src="./assets/images/works-figure.svg" alt="" />
+          </picture>
+
           <div class="works__gallery">
-            <div>
-              <img class="works__gallery--item" src="assets/images/work-password.png" alt="" />
+            <div class="works__gallery__item">
+              <img class="works__image" class="works__gallery--item" src="assets/images/work-password.png" alt="" />
             </div>
-            <div class="works__gallery--item"></div>
-            <div class="works__gallery--item"></div>
-            <div class="works__gallery--item"></div>
-            <div class="works__gallery--item"></div>
-            <div class="works__gallery--item"></div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/flags.png" alt="" />
+            </div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/to-do.png" alt="" />
+            </div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/poke-memory.png" alt="" />
+            </div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/quiz-game.png" alt="" />
+            </div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/wordle.png" alt="" />
+            </div>
+            <div class="works__gallery__item">
+              <img class="works__image" src="assets/images/works/rock-game.png" alt="" />
+            </div>
           </div>
         </div>
       </div>
