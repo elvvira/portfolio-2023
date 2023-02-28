@@ -43,10 +43,23 @@
     @include responsive(tablet) {
       width: 70%;
     }
+    @include responsive(desktop) {
+      grid-template-columns: repeat(1, 60%);
+    height: 60%;
+    bottom: 10%;
+
+
+
+    }
 
     &__item {
       height: 150px;
       border: 2px solid black;
+      @include responsive(desktop) {
+        height: 250px;
+
+  
+      }
     }
   }
   &__image {

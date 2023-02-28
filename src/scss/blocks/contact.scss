@@ -20,7 +20,7 @@
     width: 90%;
     transform: rotate(-90deg);
     @include responsive(tablet) {
-      width: 75%;
+      width: 65%;
       top: 15%;
       transform: rotate(0deg);
     }
