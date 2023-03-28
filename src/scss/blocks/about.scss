@@ -29,8 +29,7 @@
       gap: 0rem;
       border-radius: 900px;
       height: 600px;
-    border-radius: 140px;
-
+      border-radius: 140px;
     }
     @include responsive(laptop) {
       border-radius: 900px;
@@ -44,7 +43,8 @@
   &__title {
     position: relative;
     top: 40px;
-    width: 100%;
+    width: 90%;
+    border-radius: 10rem;
     height: 110px;
     background-color: yellow;
 
@@ -76,7 +76,6 @@
     padding: 2rem;
     overflow: scroll;
 
-
     @include responsive(tablet) {
       overflow: hidden;
       height: 320px;
@@ -88,7 +87,6 @@
       height: 1000px;
     }
     @include responsive(desktop) {
-
     }
   }
   &__image {
@@ -100,7 +98,6 @@
     @include responsive(laptop) {
       width: 70%;
     }
-
   }
   &__text {
     font-size: 1.2rem;
